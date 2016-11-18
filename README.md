@@ -34,3 +34,9 @@ minitranscation在对于改善性能在很多方面起作用。首先，minitran
 
 我们验证Sinfonia是通过在二个复杂且相差大的应用中使用：一个分布式文件系统SinfoniaFS与一个集群聊天服务SinfoniaGCS。这些应用以难以实现兼得扩展性与容错性而著名：系统要达到这些目标是结构复杂，几年的努力才能完成。通过使用Sinfonia，我们构造它们分别只需要3900与3500行代码，一个与两个人月的工作量。在SinfoniaFS，Sinfonia用来贮藏文件系统的数据，集群中每个结点 使用minitransactions原子性地检索与更新文件数据、属性、分配与回收空间。在SinfoniaBGCS，Sinfonia保存有序的消息，用户使用minitransactions增加新的消息到消息序列里。
 
+经验显示Sinfonia和使用它的应用伸缩性好，运行良好。Sinfonia在 单 个结点的情况下每秒可低延迟地执行数千个minitransactions，随着系统数据增大总处理能力扩大得很好。SinfoniaFS通过单个内存结点执行得跟NFS服务一样好，不像NFS服务，SinfoniaFS很容易就扩展到数千个结点。SinfoniaGCS扩展性要强于Spread, Spread是一个有强大处理能力的集群通迅服务的实现。
+
+
+
+
+
