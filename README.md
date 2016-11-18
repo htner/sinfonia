@@ -32,3 +32,5 @@ Sinfonia的核心是一个轻量级的minitransaction原语，应用程序能原
 
 minitranscation在对于改善性能在很多方面起作用。首先，minitransactions允许用户将批量更新放一起，可以消除多次网络往返的开消。其次，因为限制作用域，minitransactions可以在提交协议中执行。事实上，Sinfonia可以使用二次的网络往返就可以开始，执行， 提交一个minitransaction。作为对比，拥有更多功能与更高级的数据库事务，
 
+
+
