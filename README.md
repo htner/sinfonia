@@ -36,7 +36,7 @@ minitranscation在对于改善性能在很多方面起作用。首先，minitran
 
 经验显示Sinfonia和使用它的应用伸缩性好，运行良好。Sinfonia在 单 个结点的情况下每秒可低延迟地执行数千个minitransactions，随着系统数据增大总处理能力扩大得很好。SinfoniaFS通过单个内存结点执行得跟NFS服务一样好，不像NFS服务，SinfoniaFS很容易就扩展到数千个结点。SinfoniaGCS扩展性要强于Spread, Spread是一个有强大处理能力的集群通迅服务的实现。
 
+### 2.假设与目标
 
-
-
+我们用一个数据中心来研究分布式系统。一个数据中心由很多连接相当好的机器组成的网站。
 
