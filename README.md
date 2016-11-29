@@ -92,13 +92,5 @@ minitranstion是一个用来控制分布式数据的强大底层。minitransacti
 
 6.如果拥有租约则更改数据。一个比较读求检查是否拥有租约，如果有写请求更新数据。
 
-一个频繁的minitransaction特色是使用比较请求来
-
-
-
-
-
-
-
-
+一个频繁的minitransaction特色是使用比较请求来验证数据，如果数据验证通过，使用写请求应用一些改变成相同或不同的数据\(Todo\)。这些minitransaction在Sinfonia中很常见：文件系统的inode缓存，
 
